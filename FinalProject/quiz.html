@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Take A Quiz</title>
+  	<link type="text/css" rel="stylesheet" href="CSS/quiz.css">
+    <script src="JS/quiz.js"></script>
+  </head>
+  <body>
+    <div id="Header">
+  		<nav>
+  			<ul id="menu">
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="history.html">History</a></li>
+  				<li><a href="legislation.html">Legislation</a></li>
+  				<li><a href="support.html">Support Net Neutrality</a></li>
+  				<li><a href="opposition.html">Opposition</a></li>
+  				<li><a href="current.html">Current Events</a></li>
+  				<li><a href="quiz.html">Quiz</a></li>
+  				<li><a href="contact.html">Contact Us</a></li>
+  			</ul>
+				<ul id="dropdown">
+					<li><a href="#">&#9776;</a>
+						<ul id="sub_drop">
+							<li><a href="index.html">Home</a></li>
+		  				<li><a href="history.html">History</a></li>
+		  				<li><a href="legislation.html">Legislation</a></li>
+		  				<li><a href="support.html">Support Net Neutrality</a></li>
+		  				<li><a href="opposition.html">Opposition</a></li>
+		  				<li><a href="current.html">Current Events</a></li>
+		  				<li><a href="quiz.html">Quiz</a></li>
+		  				<li><a href="contact.html">Contact Us</a></li>
+		  			</ul>
+					</li>
+				</ul>
+				<h1 id="netheader">Net Neutrality</h1>
+  		</nav>
+	  </div>
+
+    <h1 id="quiz_title">Take A Quiz</h1>
+    <hr>
+
+    <form id="quiz_start" class="quiz">
+      <h1>But First, Let's Take A Short Quiz</h1>
+      <input type="button" id="begin" value="Start Quiz" class="bgn"/>
+    </form>
+
+    <form id="quiz_section" method="post" class="quiz">
+      <h1 id="question">Sample Question 1</h1>
+      <div id="answer_form">
+        <table>
+          <tr>
+            <td id="box1" class="box">
+              <input type="radio" name="answer" id="a1" value="box1"/>
+              <label for="a1" id="l1">Sample Answer 1</label>
+            </td>
+            <td class="filler">
+            </td>
+            <td id="box2" class="box">
+              <input type="radio" name="answer" id="a2" value="box2"/>
+              <label for="a2" id="l2">Answer 2</label>
+            </td>
+          </tr>
+          <tr>
+            <td id="box3" class="box">
+              <input type="radio" name="answer" id="a3" value="box3"/>
+              <label for="a3" id="l3">Answer 3</label>
+            </td>
+            <td class="filler">
+            </td>
+            <td id="box4" class="box">
+              <input type="radio" name="answer" id="a4" value="box4"/>
+              <label for="a4" id="l4">Answer 4</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <section id="submit_btns">
+        <input type="button" value="Back" id="back" class="btn"/>
+        <input type="button" value="Next" id="next" class="btn"/>
+        <input type="button" value="Submit" id="sbmt" class="btn"/>
+      </section>
+    </form>
+
+    <form id="quiz_results" class="quiz">
+      <div id=results>
+      </div>
+      <input type="submit" value="Take Again" id="tagain" class="btn"/>
+    </form>
+  </body>
+</html>

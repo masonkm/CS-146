@@ -1,0 +1,132 @@
+#header{
+	display: inline-table;
+	background-color: blue;
+}
+#netheader{
+	display:none;
+	color: #ff6600;
+}
+nav{
+	background-color: #041445;
+	padding: 1px;
+	border-radius: 10px;
+}
+nav ul li{
+	display: inline;
+	padding: 5px;
+	background-color: #ff6600;
+	color: white;
+	border-radius: 5px;
+	font-size: 17pt;
+	margin: 0;
+	margin-right: 10px;
+}
+nav ul li:hover{
+	background-color: orange;
+}
+nav ul li a {
+	text-decoration: none;
+	color:#0000EE;
+}
+#dropdown{
+	display:none;
+}
+#sub_drop{
+	display: none;
+}
+
+
+p{
+  text-indent: 50px;
+}
+body {
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rWTERSESipmu22cf/server-room-led-lights-are-flashing-technology-background_blegolfd-x_thumbnail-full01.png);
+	background-color: black;
+	background-size: 100%, 100%;
+	background-attachment: fixed;
+	font-family: verdana;
+}
+
+#history_text{
+	background-color: rgba(0,0,0,.9);
+	background-attachment: fixed;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 12px;
+	color: white;
+	overflow-y: auto;
+	height: 700px;
+	border-radius: 10px;
+}
+#history_title{
+	background-color: rgba(0,0,0,.9);
+	background-attachment: fixed;
+	color: white;
+	padding: 8px;
+}
+
+#btn {
+  display: block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+	color: #FFF;
+	background-color: #00ea6e;
+  padding: 14px 20px;
+  font-size: 22px;
+  line-height: 1.28;
+  border-radius: 10px;
+	margin: 0 auto;
+	outline: none;
+}
+
+/* Rules for tablet*/
+@media only screen and (max-width: 1000px){
+	nav ul li{
+		display: inline-flex;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+
+
+	#history_text{
+		width: 90%;
+		height: 60%;
+	}
+}
+/*Rules for phones*/
+@media only screen and (max-width: 500px){
+	#dropdown{
+		display: inline;
+	}
+	#dropdown > li{
+		margin-bottom: 10px;
+	}
+	#dropdown:hover #sub_drop{
+		display: table-column;
+		width: 40%;
+		position: absolute;
+		background-color: #041445;
+		border-radius: 5px;
+		padding-bottom: 10px;
+	}
+	#menu{
+		display: none;
+	}
+	#netheader{
+		display: inline;
+	}
+
+
+	#history_text{
+		line-height: 1.5;
+	}
+	body{
+		background-image: linear-gradient(lightgray,darkgray);
+	}
+}

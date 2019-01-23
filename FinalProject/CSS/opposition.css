@@ -1,0 +1,75 @@
+
+#header{
+	display: inline-table;
+	background-color: blue;
+}
+nav{
+	background-color: #041445;
+	padding: 1px;
+	border-radius: 10px;
+}
+nav ul li{
+	display: inline;
+	padding: 5px;
+	background-color: #ff6600;
+	color: white;
+	border-radius: 5px;
+	font-size: 17pt;
+	margin: 0;
+	margin-right: 10px;
+}
+nav ul li:hover{
+	background-color: orange;
+}
+nav ul li a {
+	text-decoration: none;
+	color:#0000EE;
+}
+
+
+body {
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rWTERSESipmu22cf/server-room-led-lights-are-flashing-technology-background_blegolfd-x_thumbnail-full01.png);
+	color: white;
+	font-family: verdana;
+	background-size: 100%, 100%;
+}
+	
+
+#content{
+	background-color: rgba(0,0,0,.6);
+	background-attachment: fixed;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+}
+#content a:visited{
+	color:lightblue;
+}
+
+/* Rules for tablet*/
+@media only screen and (max-width: 1000px){
+	nav ul li{
+		display: inline-flex;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	#content{
+		width: 100%;
+		justify-content: center;
+	}
+	#urgent{
+		width: 100%;
+	}
+	p{
+		text-align: center;
+	}
+}
+/*Rules for phones*/
+@media only screen and (max-width: 500px){
+	#content{
+		line-height: 1.5;
+	}
+	body{
+		background-image: linear-gradient(lightgray,darkgray);
+	}

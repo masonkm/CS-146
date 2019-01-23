@@ -1,0 +1,270 @@
+#header{
+	display: inline-table;
+	background-color: blue;
+}
+#netheader{
+	display:none;
+	color: #ff6600;
+}
+nav{
+	background-color: #041445;
+	padding: 1px;
+	border-radius: 10px;
+}
+nav ul li{
+	display: inline;
+	padding: 5px;
+	background-color: #ff6600;
+	color: white;
+	border-radius: 5px;
+	font-size: 17pt;
+	margin: 0;
+	margin-right: 10px;
+}
+nav ul li:hover{
+	background-color: orange;
+}
+nav ul li a {
+	text-decoration: none;
+	color:#0000EE;
+}
+#dropdown{
+	display:none;
+}
+#sub_drop{
+	display: none;
+}
+
+
+p{
+  text-indent: 50px;
+}
+
+body {
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rWTERSESipmu22cf/server-room-led-lights-are-flashing-technology-background_blegolfd-x_thumbnail-full01.png);
+	background-color: black;
+	background-size: 100%, 100%;
+	background-attachment: fixed;
+	font-family: verdana;
+}
+
+.quiz{
+	background-color: rgba(0,0,0,.9);
+	background-attachment: fixed;
+	width: 900px;
+	height: 650px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 12px;
+	color: white;
+	border-radius: 20px;
+	overflow-y: auto;
+}
+#quiz_title{
+	background-color: rgba(0,0,0,.9);
+	background-attachment: fixed;
+	color: white;
+	padding: 8px;
+}
+#quiz_start > h1{
+	font-size: 45pt;
+	text-align: center;
+	margin-top: 25px;
+}
+#quiz_section{
+	display: none;
+}
+#quiz_results{
+	display:none;
+}
+#results{
+	margin: 45px;
+	font-size: 18pt;
+}
+
+.red{
+	color: red;
+}
+.green{
+	color: #13dd00;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+	color: #FFF;
+	background-color: #00ea6e;
+  padding: 14px 20px;
+  font-size: 22px;
+  line-height: 1.28;
+  border-radius: 10px;
+	margin: auto;
+	outline: none;
+}
+.bgn {
+  padding: 26px 32px;
+  font-size: 34px;
+  line-height: 1;
+  border-radius: 19px;
+	display: block;
+  margin: 0 auto;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+	color: #FFF;
+	background-color: #00ea6e;
+	margin-bottom: 150px;
+	margin-top: 150px;
+	outline:none;
+}
+#sbmt{
+	display: none;
+	float: right;
+}
+#next{
+	float: right;
+}
+#back{
+	visibility: hidden;
+}
+#tagain{
+	display: block;
+  margin: 0 auto;
+}
+#answer_form{
+	font-size: 36pt;
+}
+.box{
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #00dbdb;
+	width: 30%;
+	height: 130px;
+	margin: auto;
+}
+.labelsize{
+	font-size: 2.2vw;
+}
+.box > input{
+	display: none;
+}
+table{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-spacing: 15px;
+}
+.filler{
+	display:none;
+}
+
+/* Rules for tablet*/
+@media only screen and (max-width: 1000px){
+	nav ul li{
+		display: inline-flex;
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+
+
+	p{
+		text-align: center;
+	}
+	.btn {
+	  padding: 10px 16px;
+	  font-size: 18px;
+	  line-height: 1.333;
+	  border-radius: 6px;
+	}
+	.quiz{
+		width: 90%;
+		height: 70%;
+		padding: 12px;
+		color: white;
+		border-radius: 10px;
+	}
+	td{
+		display: block;
+		margin: 0 auto;
+	}
+	.box{
+		padding: 20px;
+		border-radius: 10px;
+		background-color: #00dbdb;
+		width: 90%;
+		height: 20%;
+	}
+	#quiz_start > h1{
+		font-size: 35pt;
+		text-align: center;
+		margin-top: 25px;
+	}
+	.labelsize{
+		font-size: 20pt;
+	}
+	.filler{
+		display: block;
+		padding-top: 15px;
+	}
+	.questionsize{
+		font-size: 4.6vw;
+	}
+}
+/*Rules for phones*/
+@media only screen and (max-width: 500px){
+	#dropdown{
+		display: inline;
+	}
+	#dropdown > li{
+		margin-bottom: 10px;
+	}
+	#dropdown:hover #sub_drop{
+		display: table-column;
+		width: 40%;
+		position: absolute;
+		background-color: #041445;
+		border-radius: 5px;
+		padding-bottom: 10px;
+	}
+	#menu{
+		display: none;
+	}
+	#netheader{
+		display: inline;
+	}
+
+
+	#quiz_section{
+		line-height: 1.5;
+	}
+	body{
+		background-image: linear-gradient(lightgray,darkgray);
+	}
+	#quiz_start > h1{
+		font-size: 25pt;
+		text-align: center;
+		margin-top: 25px;
+	}
+	label{
+		font-size: 9vw;
+	}
+	.box{
+		padding-top: 10px;
+		border-radius: 8px;
+		background-color: #00dbdb;
+		width: 80%;
+		height: 20%;
+	}
+	.questionsize{
+		font-size: 5.6vw;
+	}
+}
